@@ -10,18 +10,15 @@ public class MessageDigestThread  implements Runnable {
 	
 	   MessageDigestThread(String data)
 	   {
-		  setMddata(data);
-		  
+	   	setMddata(data);
 	   }
 	
 	   public void run()
 		{
-		
-		   try
+		 try
 		   {
-		 
-			File file = new File(mddata);
-			FileInputStream fis = new FileInputStream(file);
+		    File file = new File(mddata);
+		    FileInputStream fis = new FileInputStream(file);
 	
 		    MessageDigest md = MessageDigest.getInstance("SHA");
 		    DigestInputStream dis = new DigestInputStream(fis,md);
