@@ -1,3 +1,9 @@
+/**
+ * AUTHOR: RONAK PANAHI
+ * Date: November 2015
+ * Working with Digest Streams and Running Threads
+ */
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.security.DigestInputStream;
