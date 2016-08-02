@@ -1,3 +1,10 @@
+/**
+ * AUTHOR: RONAK PANAHI
+ * Date: November 2015
+ * Working with Digest Streams and Running Threads
+ */
+
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
@@ -9,8 +16,8 @@ public class MessageDigest_ {
 	public static void main(String args[]) throws Exception {
 		
 		String data[] = new String[2];
-		data[0] = "c:\\data\\data.doc";
-		data[1] = "c:\\data\\data_1.doc";
+		data[0] = "c:\\data.doc";
+		data[1] = "c:\\data_1.doc";
 
 		 ExecutorService threadpool = Executors.newFixedThreadPool(2);
 		 Runnable msd1 = new MessageDigestThread(data[0]);
